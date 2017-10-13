@@ -1,0 +1,26 @@
+@import 'variables.css';
+
+.container {
+  background-color: $color1;
+
+  @media (--tablet) {
+    background-color: $color2;
+  }
+
+  &__child {
+    color: $color2;
+    transform: skewX(10deg);
+
+    @media (--tablet) {
+      color: $color1;
+    }
+  }
+
+  & .solo {
+    text-transform: uppercase;
+  }
+}
+
+pre {
+  display: inline-block;
+}
